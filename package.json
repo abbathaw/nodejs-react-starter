@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-react-starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && node ./bin/www",
+    "build": "webpack",
+    "dev" : "npm-run-all --parallel watch:server watch:build",
+    "watch:build"  : "webpack --watch",
+    "watch:server" : "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "atlassian-jwt": "^1.0.3",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "hbs": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "lowdb": "^1.0.0",
+    "moment": "^2.27.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "uuid": "^8.2.0",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
